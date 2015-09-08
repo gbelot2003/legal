@@ -22,14 +22,14 @@ class DatabaseSeeder extends Seeder
 		$this->call('SalasTableSeeder');
     	$this->call('UserstatusesTableSeeder');
 		$this->call('TipoCasosTableSeeder');
+		$this->call('TipoContraparteTableSeeder');
 		$this->call('PermissionsTableSeeder');
 		$this->call('RolesTableSeeder');
     	$this->call('UsersTableSeeder');
-		$this->call('ClientesTableSeeder');
-		$this->call('TribunalesTableSeeder');
-		$this->call('TipoContraparteTableSeeder');
-		$this->call('ContactosTableSeeder');
-		$this->call('CasosTableSeeder');
+		//$this->call('ClientesTableSeeder');
+		//$this->call('TribunalesTableSeeder');
+		//$this->call('ContactosTableSeeder');
+		//$this->call('CasosTableSeeder');
 	}
 
 }
