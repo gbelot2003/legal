@@ -1,0 +1,111 @@
+@import "../../../vendor/bower_components/materialize/sass/materialize";
+@import "../../../vendor/bower_components/select2/src/scss/core";
+@import "fullcalendar";
+@import "jquery-ui.min";
+@import "jquery-ui.structure.min";
+@import "jquery-ui-timepicker-addon";
+@import "jquery-ui.theme.min";
+@import "jquery.cleditor";
+
+
+.tiny{
+  font-size: 1rem;
+}
+
+.small{
+  font-size: 2rem;
+}
+
+.medium{
+  font-size: 4rem;
+}
+
+.large{
+  font-size: 6rem;
+}
+
+/* label color */
+.input-field label {
+  color: #698fba;
+}
+/* label focus color */
+.input-field input[type=text]:focus + label {
+  color: #698fba;
+}
+/* label underline focus color */
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #698fba;
+  box-shadow: 0 1px 0 0 #698fba;
+}
+/* valid color */
+.input-field input[type=text].valid {
+  border-bottom: 1px solid #698fba;
+  box-shadow: 0 1px 0 0 #698fba;
+}
+/* invalid color */
+.input-field input[type=text].invalid {
+  border-bottom: 1px solid #698fba;
+  box-shadow: 0 1px 0 0 #698fba;
+}
+/* icon prefix focus color */
+.input-field .prefix.active {
+  color: #698fba;
+}
+
+/**** clientes contactos  ****/
+
+.header{
+  padding:0.5rem 0.3rem;
+  background-color: #5288dc;
+}
+
+.collections{
+  background-color: #fff;
+  line-height: 1.5rem;
+  padding: 10px 20px;
+  margin: 0;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.collection a.collections{
+  display: block;
+  transition: 0.25s;
+  color: #26a69a;
+}
+
+/** efectos **/
+.expand-transition {
+
+  transition: all .3s ease;
+  padding: 10px;
+}
+.expand-enter, .expand-leave {
+  height: 0;
+  padding: 0 10px;
+  opacity: 0;
+}
+
+.oexpand-transition {
+  transition: all .4s ease;
+  overflow: hidden;
+}
+.oexpand-enter, .oexpand-leave {
+  height: 0;
+  opacity: 0;
+}
+
+/******/
+
+.text-info{
+  padding: 0.7rem 0.5rem
+}
+
+.diverblock{
+  margin-bottom: 1rem;
+  padding: 0.5rem 0 0 0;
+}
+
+.showInfo{
+  padding: 0.8rem 0 0.8rem 0.2rem !important;
+}
+

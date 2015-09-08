@@ -1,0 +1,7 @@
+.idea/
+.idea
+.env
+/vendor
+/node_modules
+Homestead.yaml
+resources/assets/js/jquery.GlobalMoneyInput-1.0-with-libs.zip

@@ -1,0 +1,31 @@
+{
+  "name": "tester",
+  "version": "0.0.0",
+  "homepage": "https://github.com/gbelot2003/bufeteapp",
+  "authors": [
+    "gbelot2003 <gerardobelot@outlook.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "fullcalendar": "~2.3.2",
+    "angular-materialize": "*",
+    "angularjs": "~1.4.1",
+    "materialize": "~0.97.0",
+    "angular-morph": "~0.1.0",
+    "ng-animate-css": "~0.0.4",
+    "vue": "~0.12.6",
+    "vue-resource": "~0.1.5",
+    "datatables": "~1.10.7",
+    "select2": "~4.0.0",
+    "underscore": "~1.8.3",
+    "jquery.ui": "~1.11.4"
+  }
+}
