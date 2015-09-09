@@ -1,13 +1,14 @@
 @extends('reportes')
 
 @section('content')
-	<h3>Informe de Casos</h3>
+	<h1 align="center">Bufete Forlar</h1>
+	<h3 style="text-decoration: underline">Informe de Casos</h3>
 	<div class="row">
 		<div class="col m4 s6">
 			<table>
 				<tr>
 					<th>Cliente: </th>
-					<td>{{ $cliente->name }}</td>
+					<td><strong>{{ $cliente->name }}</strong></td>
 				</tr>
 				<tr>
 					<th>Fecha: </th>
@@ -27,25 +28,31 @@
 			</div>
 			@foreach($casos as $casos)
 			<div class="row caso">
-				<table class="table table-bordered table-hoverable responsive-table" border="1">
-					<caption>Caso No # <span class="red-text">{{ $casos->caso }}</span></caption>
+				<table class="table" width="100%" bgcolor="#f0f8ff">
+					<caption align="left">Caso No# <strong>{{ $casos->caso }}</strong></caption>
 					<tr>
 						<th>Tribunal</th>
 						<th>Tipo</th>
+						<th>Instancia</th>
 						<th>Juez</th>
-						<th>Estado</th>
 					</tr>
 					<tr>
-						<td><strong class="blue-text">{{ $casos->tribunales->name  }}</strong></td>
-						<td><strong class="blue-text">{{ $casos->tipocasos->name  }}</strong></td>
-						<td><strong class="blue-text">{{ $casos->jueces->name  }}</strong></td>
-						<td><strong class="blue-text">{{ $casos->estadoTrans($casos->estado)  }}</strong></td>
-					</tr>
-					<tr>
-						<td colspan="4">{!! $casos->ultimactualizacion->descripcion !!}</td>
+						<td align="center"><strong class="blue-text">{{ $casos->tribunales->name  }}</strong></td>
+						<td align="center"><strong class="blue-text">{{ $casos->tipocasos->name  }} : {{ $casos->tipojuicio }} </strong></td>
+						<td align="center"><strong class="blue-text">{{ $casos->instancia  }}</strong></td>
+						<td align="center"><strong class="blue-text">{{ $casos->jueces->name  }}</strong></td>
 					</tr>
 				</table>
+				<br/>
+				<div class="col m12">
+					{!! $casos->ultimactualizacion->descripcion !!}
+				</div>
+				<hr/>
+				<div class="col m12">
+					<span>Encargado:</span>{{ $casos->ultimactualizacion->users->name }}
+				</div>
 			</div>
+
 			@endforeach
 
 		</div>

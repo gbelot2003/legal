@@ -30,7 +30,7 @@ class CasosCreateRequest extends Request
 			'tipojuicio' => 'string|required',
 			'tribunal_id' => 'integer|required',
 			'instancia' => 'string|required',
-			'salas' => 'string|required',
+			'salas_id' => 'string|required',
 			'juez_id' => 'integer|required',
 			'ca'	=> 'string',
 			'csj'	=> 'string',
